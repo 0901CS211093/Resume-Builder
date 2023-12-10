@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="resume.css" />
+
+<title>Resume Generator</title>
+
+</head>
+
+<body>
+    <div class="container" id="cv-form">
+    <h1 class="text-center my-2">Resume builder </h1>
+    <p class="text-center">By Ram ji pandey</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Personal information</h3>
+            <div class="form-group">
+                <label for="namefeild">
+                    Your name
+                </label>
+                <input type="text" id="namefeild" placeholder="write here" class="form-control">
+            </div>
+            <div class="form-group mt-2">
+                <label for="contactfeild">
+                  Your Mobile Number
+                </label>
+                <input type="text" id="contactfeild" placeholder="write here" class="form-control">
+            </div>
+            <div class="form-group mt-2">
+                <label for="addressfeild">
+                  Your Address
+                </label>
+                <textarea name="" id="addressfeild" placeholder="write here" class="form-control" rows="5"></textarea>
+            </div>
+           
+            <div class="form-group mt-3"><label for="">Select your photo</label>
+            <input id="imgfeild" type="file" class="form-control"/></div>
+           
+           
+            <p class="text-secondary my-3">Importannt Links</p>
+            <div class="form-group mt-2">
+                <label for="linkedinfeild">
+                 Linkedin Link
+                </label>
+                <input type="text" id="linkedinfeild" placeholder="write here" class="form-control">
+            </div>
+            <div class="form-group mt-2">
+                <label for="githubfeild">
+                  Github Link
+                </label>
+                <input type="text" id="githubfeild" placeholder="write here" class="form-control">
+            </div>
+    </div>
+<div class="col-md-6">
+    <h3>Professional information</h3>
+    <div class="form-group mt-2">
+        <label for="">
+          About Me
+        </label>
+        <textarea id="objectivefeild" row="5"  placeholder="write here" class="form-control" ></textarea>
+    </div>
+    <div class="form-group mt-2" id="we">
+        <label for="">
+          Work Experience
+        </label>
+        <textarea placeholder="write here" class="form-control wefeild" ></textarea>
+        <div class="container text-center mt-2" id="weaddbutton">
+            <button onclick="addnewwefeild()" class="btn btn-primary btn-sm">Add</button>
+        </div>
+    </div>
+    <div class="form-group mt-2" id="aq">
+        <label for="">
+          Academic Qualification
+        </label>
+        <textarea placeholder="write here" class="form-control aqfeild" ></textarea>
+        <div class="container text-center mt-2" id="aqaddbutton">
+            <button onclick="addnewaqfeid()"  class="btn btn-primary btn-sm">Add</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="container text-center mt-3">
+        <button onclick="generateresume()" class="btn btn-primary btn-lg">Generate Resume</button>
+    </div>
+</div>
+ <div class="container" id="cv-template">
+    <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Ze_F6AGBDQyYrlbNF7tCXAHaHa&pid=Api&P=0&h=180" 
+            alt=""
+            class="img-fluid myimg"
+            id="imgt"
+            />
+            <div class="container">
+                <p id="namet1">Ram ji Pandey</p>
+                <p id="contactt">+91 8827520023, +91 7805062241</p>
+                <p id="addresst">22/9 kesharbag colony ujjain mp</p>
+                <hr/>
+                <p><a id="linkedint" href="#1">https://www.linkedin.com/in/ram-ji-pandey-18710a240</a></p>
+                <p><a id="githubt" href="#1">https://leetcode.com/Hacker_Baba/</a></p>
+            </div>
+        </div>
+    <div class="col-md-8 py-5">
+        <h1 id="namet2" class="text-center" style="font-weight:980">RAM JI PANDEY</h1>
+        <div class="card mt-4">
+            <div class="card-header background">
+            <h3>About Me</h3>
+
+            </div>
+            <div class="card-body">
+                <p id="objectivet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, molestias porro dolores, soluta nihil deserunt nobis velit quia placeat enim, expedita voluptate exercitationem in alias inventore. Illum veniam architecto incidunt. Nam, dolore eligendi beatae voluptatem esse culpa delectus ratione fugiat doloremque. Necessitatibus numquam iste consequuntur molestias mollitia rerum magni?</p>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header background">
+            <h3>Work Experience</h3>
+
+            </div>
+            <div class="card-body">
+                <ul id="wet">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                
+                
+                </ul>
+            </div>
+               
+        </div>
+        <div class="card mt-4">
+            <div class="card-header background">
+            <h3>Academic Qualification</h3>
+
+            </div>
+            <div class="card-body">
+                <ul id="aqt">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, labore.</li>
+                
+                
+                </ul>
+            </div>
+               
+        </div>
+        <div class="container mt-3 text-center">
+            <button onclick="printresume()" class="btn background"> PRINT RESUME</button>
+        </div>
+        
+    </div>
+    </div>
+ </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="resume.js"></script>
+
+</body>
+
+</html>
