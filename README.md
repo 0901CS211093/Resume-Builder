@@ -36,7 +36,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/resume-builder.git
+git clone https://github.com/0901CS211093/resume-builder.git
 Navigate to the project directory:
 
 bash
