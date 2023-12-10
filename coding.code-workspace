@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../coding"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "resume builder"
+	}
+}
