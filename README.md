@@ -54,10 +54,4 @@ Download the resume as a PDF or save it for future editing.
 Contributing
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix: git checkout -b feature-name.
-Make your changes and commit them: git commit -m 'Description of changes'.
-Push to the branch: git push origin feature-name.
-Create a pull request with a detailed description of the changes.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
