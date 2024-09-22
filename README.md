@@ -1,57 +1,28 @@
-Resume Builder Project
-This is a simple web application designed to help users create professional resumes effortlessly. The project utilizes HTML, CSS, and JavaScript to provide a user-friendly interface for building and customizing resumes.
+# Resume-Builder
 
-Table of Contents
-Features
-Getting Started
-Prerequisites
-Installation
-Usage
-Contributing
-License
-Features
-User-Friendly Interface:
+# Introduction
+This is a simple resume builder web application built using HTML, CSS, and JavaScript. 
 
-Intuitive design for easy navigation.
-Responsive layout for optimal viewing on various devices.
-Dynamic Resume Building:
+It provides a user-friendly interface to create professional resumes effortlessly.
 
-Users can add personal information, education, work experience, and skills.
-Real-time preview of the resume as users make changes.
-Customization Options:
+# Features
+## User-friendly Interface: 
+  The application offers an intuitive interface for users to input their resume details easily.
 
-Choose from different resume templates.
-Customize font styles, colors, and layout.
-Export Options:
+## Dynamic Preview: 
+  Users can see a real-time preview of their resume as they fill in their details, ensuring they can visualize the final document.
 
-Download the resume as a PDF or save it for future editing.
-Getting Started
-Prerequisites
-Make sure you have the following installed on your machine:
+## Customization: 
+  Users can customize various aspects of their resume, including personal information, work experience, education, skills, and more.
 
-Git
-Any modern web browser (Chrome, Firefox, Safari, etc.)
-Installation
-Clone the repository:
+# Usage
 
-bash
-Copy code
-git clone https://github.com/0901CS211093/resume-builder.git
-Navigate to the project directory:
+Personal Information: Start by entering your personal information such as name, contact details, and address.
 
-bash
-Copy code
-cd resume-builder
-Open the index.html file in your preferred web browser.
+Work Experience: Add your work experience details, including job title, company name, duration, and responsibilities.
 
-Usage
-Open the application in your web browser.
-Fill in the required details in each section (Personal Information, Education, Work Experience, Skills).
-Customize the appearance of your resume using the provided options.
-Preview your resume in real-time.
-Choose a template that suits your preferences.
-Download the resume as a PDF or save it for future editing.
-Contributing
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+Education: Input your educational qualifications, including degrees, majors, institutions, and graduation years.
 
+Skills: List your skills and competencies relevant to the job you're applying for.
 
+Preview and Download: Once you've filled in all the necessary details, preview your resume. If satisfied, you can download the resume in PDF format.
